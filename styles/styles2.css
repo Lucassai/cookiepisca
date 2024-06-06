@@ -1,0 +1,484 @@
+@font-face {
+  font-family: "punk";
+  src: url(/resources/Punk\Typewriter.otf);
+}
+@font-face {
+  font-family: "creamy";
+  src: url("/resources/SuperCreamy.ttf");
+}
+@font-face {
+  font-family: "sandler";
+  src: url(/resources/Sandler\ Trial.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  height: 20vh;
+  scroll-behavior: smooth;
+}
+body {
+  background: #ffe3d6;
+}
+h2 {
+  font-family: "creamy", Arial, sans-serif;
+  font-size: 3em;
+  text-shadow: 2px 2px #a54f31, /* Primeira sombra */ 4px 4px #703621; /* Segunda sombra */
+  color: black;
+}
+.icon img {
+  position: relative;
+  width: 80px;
+  transition: opacity 0.3s ease;
+}
+
+/* Configurações de header */
+header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  padding: 30px 4%;
+  color: white;
+  background: #a54f31;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: #703621 10px 10px 10px;
+  transition: 0.5s;
+}
+header.rolagem {
+  box-shadow: none;
+  background-color: #ffe3d6;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+header a {
+  padding: 20px;
+  color: black;
+}
+
+header.rolagem .contato ul li a {
+  color: #703621;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul li {
+  float: left;
+  padding: 15px;
+  list-style: none;
+  font-size: 1.5em;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "creamy";
+}
+nav ul li a:hover {
+  background-color: white;
+  color: #703621;
+  border-radius: 15px;
+}
+.contato {
+  padding: 5px;
+}
+.contato ul li {
+  float: left;
+  padding-left: 10px;
+  list-style: none;
+}
+.contato ul li a {
+  font-size: 2em;
+  color: black;
+}
+.contato ul li a:hover {
+  background-color: white;
+  color: #703621;
+  border-radius: 15px;
+  text-shadow: white 2px 2px;
+}
+
+main {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 200px;
+  left: 0px;
+}
+main h1 {
+  text-align: center;
+  font-family: "creamy";
+  font-size: 5em;
+  text-shadow: 2px 2px #a54f31, /* Primeira sombra */ 4px 4px #703621; /* Segunda sombra */
+  color: black;
+  text-transform: uppercase;
+}
+article {
+  border-radius: 35px 296px;
+  background-color: aliceblue;
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 250px;
+}
+article h2 {
+  position: relative;
+  top: 130px;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  left: 0;
+}
+article img {
+  position: relative;
+  top: 150px;
+  bottom: 100px;
+  border-radius: 400px;
+  width: 600px;
+}
+article p {
+  width: 600px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  position: relative;
+  left: 600px;
+  bottom: 300px;
+}
+article p a {
+  text-decoration: none;
+  color: #703621;
+  font-family: "creamy";
+  padding: 8px;
+}
+article p a:hover {
+  text-decoration: none;
+  color: #a54f31;
+  font-family: "creamy";
+  background-color: white;
+  padding: 8px;
+  border-radius: 15px;
+}
+
+#cookies {
+  border-radius: 296px 35px;
+  background-color: aliceblue;
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: 400px;
+  height: 800px;
+}
+#cookies h2 {
+  position: relative;
+  top: 130px;
+  width: 1200px;
+  height: 50px;
+  text-align: center;
+}
+#cookies img {
+  width: 600px;
+  position: relative;
+  top: 150px;
+  left: 600px;
+  border-radius: 600px;
+}
+#cookies p {
+  text-align: center;
+  width: 600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  position: relative;
+  bottom: 350px;
+}
+/* Area combos */
+#combos {
+  border-radius: 35px 296px;
+  background-color: aliceblue;
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 550px;
+}
+#combos h2 {
+  top: 130px;
+  position: relative;
+  width: 1200px;
+  height: 50px;
+  text-align: center;
+}
+#combos img {
+  position: relative;
+  top: 150px;
+  border-radius: 600px;
+  width: 600px;
+}
+#combos p {
+  width: 600px;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  position: relative;
+  left: 600px;
+  bottom: 350px;
+}
+/* Fim area combos */
+
+/* Area Validade */
+#validade {
+  border-radius: 296px 35px;
+  background-color: aliceblue;
+  width: 1200px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+  top: 700px;
+}
+#validade h2 {
+  position: relative;
+  top: 130px;
+  width: 1200px;
+  height: 50px;
+  text-align: center;
+}
+#validade img {
+  width: 600px;
+  position: relative;
+  top: 150px;
+  left: 600px;
+  border-radius: 600px;
+}
+#validade p {
+  text-align: center;
+  width: 600px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2em;
+  position: relative;
+  bottom: 350px;
+}
+footer {
+  text-align: center;
+  background-color: #ffe3d6;
+  top: 800px;
+  position: relative;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  clear: both;
+  color: black;
+  width: 1200px;
+  margin: 0 auto;
+  font-size: 1.5em;
+  text-shadow: none;
+}
+footer a {
+  color: orangered;
+}
+
+@media (max-width: 728px) {
+  body {
+    width: 450px;
+  }
+
+  header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    /* padding: 5px 4%; */
+    background: #a54f31;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: #703621 10px 10px 10px;
+    transition: 0.5s;
+  }
+  header.rolagem a {
+    padding: 0px;
+    color: #703621;
+  }
+
+  header a {
+    padding: 0;
+    color: black;
+  }
+  .container {
+    max-width: 450px;
+    margin: auto;
+  }
+  .contato {
+    position: relative;
+    top: -20px;
+    clear: both;
+    position: relative;
+    left: 0px;
+  }
+
+  nav ul li {
+    position: relative;
+    left: 30px;
+    padding: 0px 30px 5px 0px;
+    list-style: none;
+    font-size: 1.5em;
+  }
+  .icon img {
+    position: relative;
+    right: 0px;
+    width: 80px;
+  }
+  main {
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+    top: 180px;
+  }
+
+  main h1 {
+    height: 50px;
+    width: 450px;
+    font-size: 4em;
+    position: relative;
+    text-align: center;
+  }
+  article {
+    height: 700px;
+    width: 450px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    background: none;
+  }
+  article h2 {
+    width: 450px;
+    position: relative;
+    left: 0;
+    top: 150px;
+    text-align: center;
+  }
+  article img {
+    width: 350px;
+    position: relative;
+    left: 50px;
+    top: 180px;
+  }
+  article p {
+    width: 350px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 180px;
+    left: 50px;
+    font-size: 1em;
+  }
+  #cookies {
+    background: none;
+    position: relative;
+    left: 0;
+    top: 100px;
+    width: 450px;
+    height: 700px;
+  }
+  #cookies h2 {
+    position: relative;
+    top: 150px;
+    width: 450px;
+    position: relative;
+    text-align: center;
+  }
+  #cookies img {
+    width: 350px;
+    position: relative;
+    top: 160px;
+    left: 50px;
+    border-radius: 700px;
+  }
+  #cookies p {
+    width: 300px;
+    background-color: #ffe3d6e0;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 1em;
+    position: relative;
+    left: 75px;
+    top: 160px;
+    border: none;
+    border-radius: 20px;
+  }
+  #combos {
+    background: none;
+    width: 450px;
+    position: relative;
+    top: 50px;
+    left: 0;
+  }
+  #combos h2 {
+    width: 450px;
+    position: relative;
+    top: 150px;
+    text-align: center;
+  }
+  #combos img {
+    width: 350px;
+    top: 160px;
+    left: 50px;
+  }
+  #combos p {
+    width: 300px;
+    font-size: 1em;
+    border: none;
+    position: relative;
+    top: 180px;
+    left: 75px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  #validade {
+    background: none;
+    width: 450px;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  #validade h2 {
+    text-align: center;
+    width: 450px;
+    position: relative;
+    top: 190px;
+    left: 0;
+  }
+  #validade img {
+    left: 50px;
+    width: 350px;
+    top: 200px;
+  }
+  #validade p {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    width: 300px;
+    font-size: 1em;
+    border: none;
+    position: relative;
+    left: 75px;
+    top: 210px;
+  }
+  footer {
+    font-size: 1em;
+    width: 450px;
+    position: relative;
+    top: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+}

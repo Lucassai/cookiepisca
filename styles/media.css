@@ -1,0 +1,18 @@
+@media (max-width: 450px) {
+  html {
+    width: 450px;
+  }
+  header {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 450px;
+    padding: 0px 4%;
+    color: white;
+    background: #a54f31;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: #703621 10px 10px 10px;
+    transition: 0.5s;
+  }
+}
